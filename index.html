@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudbox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu -->
+        <div class="menu">
+            <h2>Cloudbox</h2>
+            <ul>
+                <li onclick="cloudList('Google Drive')">
+                    <img src="images/google_drive.png" alt="Google Drive">
+                    <p>Google Drive</p>
+                </li>
+                <li onclick="cloudList('Dropbox')">
+                    <img src="images/dropbox.png" alt="Dropbox">
+                    <p>Dropbox</p>
+                </li>
+                <li onclick="cloudList('One Drive')">
+                    <img src="images/one_drive.png" alt="One Drive">
+                    <p>One Drive</p>
+                </li>
+                <li onclick="cloudList('MEGA')">
+                    <img src="images/mega.png" alt="MEGA">
+                    <p>MEGA</p>
+                </li>
+            </ul>
+
+            <!-- Botão para logoff -->
+            <button id="signout_button">Sair</button>
+        </div>
+        <!-- //Menu -->
+        
+        <!-- Conteúdo -->
+        <div class="content">
+            <!-- Header -->
+            <div class="cloud">
+                <h1 class="title">Cloudbox</h1>
+            </div>
+            <!-- //Header -->
+
+            <!-- Itens da nuvem -->
+            <div class="contentCards">
+                <div class="card">
+                    <p class="name"></p>
+                </div>
+            </div>
+            <!-- //Itens da nuvem -->
+            
+            <!-- Login -->
+            <div class="login">
+                <button class="login-button">Selecione um serviço</button>
+            </div>
+            <!-- //Login -->
+        </div>
+        <!-- //Conteúdo -->
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <!-- Google Drive API -->
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+</html>
